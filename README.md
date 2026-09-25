@@ -1,8 +1,21 @@
-# CY Watermark · 图片批量加水印
+# CY Watermark · 图片水印工具
 
-纯前端、**完全在浏览器本地运行**的图片批量加水印工具。图片不会上传到任何服务器。
-支持阵列平铺水印、角度 / 密度 / 颜色 / 渐变 / 透明度自由调节、EXIF 一键抹除、批量打包导出，
-并可以「安装到桌面」当作离线 App 使用（PWA）。
+纯前端、**完全在浏览器本地运行**的图片批量加水印工具。
+
+- 🔒 **不上传** —— 图片不进任何服务器，没有后端、没有埋点
+- 🎛️ **参数全可调** —— 角度 / 密度 / 颜色 / 渐变 / 描边 / 投影 / 透明度
+- ⚡ **一键成片** —— 4 套内置预设（默认 / 较密 / 防p图 / 右下），点一下就有专业效果
+- 🧹 **顺手护隐私** —— 默认抹除 EXIF（机型 / 拍摄时间 / GPS 定位）
+- 📦 **批量处理** —— 多图自动打包 ZIP，也能逐个下载或一键复制到剪贴板
+- 📱 **可安装** —— 作为 PWA 装到桌面，断网也能正常用
+
+而且全都是本地处理，不会等待任何网络请求。
+
+[![主界面](docs/screenshot-1.png)](docs/screenshot-1.png)
+
+| 预设「防p图」：渐变 + 描边 + 投影 | 深色模式 + 大密度平铺 |
+| --- | --- |
+| [![防p图预设](docs/screenshot-2.png)](docs/screenshot-2.png) | [![深色模式](docs/screenshot-3.png)](docs/screenshot-3.png) |
 
 > 技术栈：Vue 3 + Vite + Ant Design Vue + 原生 CSS
 
@@ -11,7 +24,6 @@
 ## ✨ 功能
 
 ### 核心
-水印文字
 
 | 功能 | 说明 |
 | --- | --- |
@@ -140,6 +152,7 @@ cross-env GITHUB_REPOSITORY=owner/repo npm run build
 cy-watermark/
 ├─ .github/workflows/deploy.yml   # Pages 自动部署
 ├─ scripts/gen-icons.mjs          # 零依赖生成 PWA 图标（自写 PNG 编码器）
+├─ docs/                          # README 用的截图
 ├─ public/                        # favicon / PWA 图标 / samples（示例证件人像）/ .nojekyll
 ├─ src/
 │  ├─ main.js
