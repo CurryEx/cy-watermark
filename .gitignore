@@ -1,0 +1,18 @@
+node_modules
+dist
+dist-ssr
+dev-dist
+*.local
+.DS_Store
+Thumbs.db
+
+# 本地回收站（删除文件时移动到这里，不提交）
+回收站/
+
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*

@@ -1,0 +1,25 @@
+{
+  "name": "cy-watermark",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "纯本地运行的图片批量加水印工具（阵列平铺 / 角度 / 密度 / 颜色 / 渐变 / 透明度 / EXIF 抹除 / 批量导出 / PWA 离线）",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "gen:icons": "node scripts/gen-icons.mjs"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^7.0.1",
+    "ant-design-vue": "^4.2.6",
+    "dayjs": "^1.11.23",
+    "jszip": "^3.10.2",
+    "vue": "^3.5.43"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.9",
+    "vite": "^8.3.0",
+    "vite-plugin-pwa": "^1.3.0"
+  }
+}
